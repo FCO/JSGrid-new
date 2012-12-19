@@ -1,0 +1,192 @@
+[Wed Dec 19 17:11:03 2012] [debug] PUT /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/function/alert (curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5).
+[Wed Dec 19 17:11:03 2012] [debug] Template "not_found.development.html.ep" not found.
+[Wed Dec 19 17:11:03 2012] [debug] Template "not_found.html.ep" not found.
+[Wed Dec 19 17:11:03 2012] [debug] Rendering inline template.
+[Wed Dec 19 17:11:03 2012] [debug] Rendering inline template.
+[Wed Dec 19 17:11:03 2012] [debug] 404 Not Found (0.018308s, 54.621/s).
+[Wed Dec 19 17:11:07 2012] [debug] GET /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/functions (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11).
+[Wed Dec 19 17:11:07 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Wed Dec 19 17:11:07 2012] [debug] on get_app()
+[Wed Dec 19 17:11:07 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7fb72d863870)
+[Wed Dec 19 17:11:07 2012] [debug] Routing to controller "JSGrid::Client" and action "get_client".
+[Wed Dec 19 17:11:07 2012] [debug] Routing to controller "JSGrid::Client" and action "list_functions".
+[Wed Dec 19 17:11:07 2012] [debug] 200 OK (0.006291s, 158.957/s).
+[Wed Dec 19 17:12:14 2012] [info] Listening at "http://*:3000".
+[Wed Dec 19 17:12:19 2012] [debug] Your secret passphrase needs to be changed!!!
+[Wed Dec 19 17:12:19 2012] [debug] PUT /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/function/alert (curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5).
+[Wed Dec 19 17:12:19 2012] [debug] Template "not_found.development.html.ep" not found.
+[Wed Dec 19 17:12:19 2012] [debug] Template "not_found.html.ep" not found.
+[Wed Dec 19 17:12:19 2012] [debug] Rendering inline template.
+[Wed Dec 19 17:12:19 2012] [debug] Rendering inline template.
+[Wed Dec 19 17:12:19 2012] [debug] 404 Not Found (0.019020s, 52.576/s).
+[Wed Dec 19 17:13:40 2012] [debug] PUT /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/function/alert (curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5).
+[Wed Dec 19 17:13:40 2012] [debug] Template "not_found.development.html.ep" not found.
+[Wed Dec 19 17:13:40 2012] [debug] Template "not_found.html.ep" not found.
+[Wed Dec 19 17:13:40 2012] [debug] Rendering cached inline template.
+[Wed Dec 19 17:13:40 2012] [debug] Rendering cached inline template.
+[Wed Dec 19 17:13:40 2012] [debug] 404 Not Found (0.007011s, 142.633/s).
+[Wed Dec 19 17:14:09 2012] [info] Listening at "http://*:3000".
+[Wed Dec 19 17:14:14 2012] [debug] Your secret passphrase needs to be changed!!!
+[Wed Dec 19 17:14:14 2012] [debug] PUT /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/function/alert (curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5).
+[Wed Dec 19 17:14:14 2012] [debug] Template "not_found.development.html.ep" not found.
+[Wed Dec 19 17:14:14 2012] [debug] Template "not_found.html.ep" not found.
+[Wed Dec 19 17:14:14 2012] [debug] Rendering inline template.
+[Wed Dec 19 17:14:14 2012] [debug] Rendering inline template.
+[Wed Dec 19 17:14:14 2012] [debug] 404 Not Found (0.020649s, 48.428/s).
+[Wed Dec 19 17:17:12 2012] [debug] Your secret passphrase needs to be changed!!!
+[Wed Dec 19 17:17:12 2012] [debug] PUT /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/function/alert (curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5).
+[Wed Dec 19 17:17:12 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Wed Dec 19 17:17:12 2012] [debug] on get_app()
+[Wed Dec 19 17:17:13 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7f92c1777470)
+[Wed Dec 19 17:17:13 2012] [debug] Routing to controller "JSGrid::Client" and action "get_client".
+[Wed Dec 19 17:17:13 2012] [debug] Routing to controller "JSGrid::Client" and action "create_function".
+[Wed Dec 19 17:17:13 2012] [debug] 200 OK (0.535154s, 1.869/s).
+[Wed Dec 19 17:17:19 2012] [debug] GET /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/functions (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11).
+[Wed Dec 19 17:17:19 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Wed Dec 19 17:17:19 2012] [debug] on get_app()
+[Wed Dec 19 17:17:19 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7f92c17f6d90)
+[Wed Dec 19 17:17:19 2012] [debug] Routing to controller "JSGrid::Client" and action "get_client".
+[Wed Dec 19 17:17:19 2012] [debug] Routing to controller "JSGrid::Client" and action "list_functions".
+[Wed Dec 19 17:17:19 2012] [debug] 200 OK (0.042394s, 23.588/s).
+[Wed Dec 19 17:17:26 2012] [debug] PUT /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/function/alert (curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5).
+[Wed Dec 19 17:17:26 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Wed Dec 19 17:17:26 2012] [debug] on get_app()
+[Wed Dec 19 17:17:26 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7f92c280c7d8)
+[Wed Dec 19 17:17:26 2012] [debug] Routing to controller "JSGrid::Client" and action "get_client".
+[Wed Dec 19 17:17:26 2012] [debug] Routing to controller "JSGrid::Client" and action "create_function".
+[Wed Dec 19 17:17:26 2012] [error] DBIx::Class::Relationship::Base::create_related(): DBI Exception: DBD::SQLite::st execute failed: columns app_id, name are not unique [for Statement "INSERT INTO function ( app_id, code, name) VALUES ( ?, ?, ? )"] at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Client.pm line 23
+
+[Wed Dec 19 17:17:26 2012] [debug] Template "exception.development.html.ep" not found.
+[Wed Dec 19 17:17:26 2012] [debug] Template "exception.html.ep" not found.
+[Wed Dec 19 17:17:26 2012] [debug] Rendering inline template.
+[Wed Dec 19 17:17:26 2012] [debug] Rendering inline template.
+[Wed Dec 19 17:17:27 2012] [debug] 500 Internal Server Error (0.035232s, 28.383/s).
+[Wed Dec 19 17:18:28 2012] [debug] PUT /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/function/alert (curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5).
+[Wed Dec 19 17:18:28 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Wed Dec 19 17:18:28 2012] [debug] on get_app()
+[Wed Dec 19 17:18:28 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7f92c17f1a20)
+[Wed Dec 19 17:18:28 2012] [debug] Routing to controller "JSGrid::Client" and action "get_client".
+[Wed Dec 19 17:18:28 2012] [debug] Routing to controller "JSGrid::Client" and action "create_function".
+[Wed Dec 19 17:18:28 2012] [error] DBIx::Class::Relationship::Base::create_related(): DBI Exception: DBD::SQLite::st execute failed: columns app_id, name are not unique [for Statement "INSERT INTO function ( app_id, code, name) VALUES ( ?, ?, ? )"] at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Client.pm line 23
+
+[Wed Dec 19 17:18:28 2012] [debug] Template "exception.development.html.ep" not found.
+[Wed Dec 19 17:18:28 2012] [debug] Template "exception.html.ep" not found.
+[Wed Dec 19 17:18:28 2012] [debug] Rendering cached inline template.
+[Wed Dec 19 17:18:28 2012] [debug] Rendering cached inline template.
+[Wed Dec 19 17:18:28 2012] [debug] 500 Internal Server Error (0.017244s, 57.991/s).
+[Wed Dec 19 17:20:11 2012] [debug] Your secret passphrase needs to be changed!!!
+[Wed Dec 19 17:20:11 2012] [debug] GET /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/functions (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11).
+[Wed Dec 19 17:20:11 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Wed Dec 19 17:20:11 2012] [debug] on get_app()
+[Wed Dec 19 17:20:11 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7f92c1748ae8)
+[Wed Dec 19 17:20:11 2012] [debug] Routing to controller "JSGrid::Client" and action "get_client".
+[Wed Dec 19 17:20:11 2012] [debug] Routing to controller "JSGrid::Client" and action "list_functions".
+[Wed Dec 19 17:20:11 2012] [debug] 200 OK (0.083638s, 11.956/s).
+[Wed Dec 19 17:20:25 2012] [debug] PUT /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/function/alert2 (curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5).
+[Wed Dec 19 17:20:25 2012] [debug] Template "not_found.development.html.ep" not found.
+[Wed Dec 19 17:20:25 2012] [debug] Template "not_found.html.ep" not found.
+[Wed Dec 19 17:20:25 2012] [debug] Rendering inline template.
+[Wed Dec 19 17:20:25 2012] [debug] Rendering inline template.
+[Wed Dec 19 17:20:25 2012] [debug] 404 Not Found (0.018626s, 53.688/s).
+[Wed Dec 19 17:20:33 2012] [debug] GET /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/functions (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11).
+[Wed Dec 19 17:20:33 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Wed Dec 19 17:20:33 2012] [debug] on get_app()
+[Wed Dec 19 17:20:33 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7f92c28730d8)
+[Wed Dec 19 17:20:33 2012] [debug] Routing to controller "JSGrid::Client" and action "get_client".
+[Wed Dec 19 17:20:33 2012] [debug] Routing to controller "JSGrid::Client" and action "list_functions".
+[Wed Dec 19 17:20:33 2012] [debug] 200 OK (0.008278s, 120.802/s).
+[Wed Dec 19 17:20:34 2012] [debug] GET /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/functions (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11).
+[Wed Dec 19 17:20:34 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Wed Dec 19 17:20:34 2012] [debug] on get_app()
+[Wed Dec 19 17:20:34 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7f92c28127d8)
+[Wed Dec 19 17:20:34 2012] [debug] Routing to controller "JSGrid::Client" and action "get_client".
+[Wed Dec 19 17:20:34 2012] [debug] Routing to controller "JSGrid::Client" and action "list_functions".
+[Wed Dec 19 17:20:34 2012] [debug] 200 OK (0.007498s, 133.369/s).
+[Wed Dec 19 17:21:11 2012] [debug] Your secret passphrase needs to be changed!!!
+[Wed Dec 19 17:21:11 2012] [debug] PUT /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/function/alert2 (curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5).
+[Wed Dec 19 17:21:11 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Wed Dec 19 17:21:11 2012] [debug] on get_app()
+[Wed Dec 19 17:21:11 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7f92c1777470)
+[Wed Dec 19 17:21:11 2012] [debug] Routing to controller "JSGrid::Client" and action "get_client".
+[Wed Dec 19 17:21:11 2012] [debug] Routing to controller "JSGrid::Client" and action "create_function".
+[Wed Dec 19 17:21:11 2012] [debug] 200 OK (0.080998s, 12.346/s).
+[Wed Dec 19 17:21:14 2012] [debug] GET /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/functions (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11).
+[Wed Dec 19 17:21:14 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Wed Dec 19 17:21:14 2012] [debug] on get_app()
+[Wed Dec 19 17:21:14 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7f92c17f5ee0)
+[Wed Dec 19 17:21:14 2012] [debug] Routing to controller "JSGrid::Client" and action "get_client".
+[Wed Dec 19 17:21:14 2012] [debug] Routing to controller "JSGrid::Client" and action "list_functions".
+[Wed Dec 19 17:21:14 2012] [debug] 200 OK (0.008390s, 119.190/s).
+[Wed Dec 19 17:59:33 2012] [info] Listening at "http://*:3000".
+[Wed Dec 19 17:59:45 2012] [debug] Your secret passphrase needs to be changed!!!
+[Wed Dec 19 17:59:45 2012] [debug] PUT /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/function/alert3 (curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5).
+[Wed Dec 19 17:59:45 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Wed Dec 19 17:59:45 2012] [debug] on get_app()
+[Wed Dec 19 17:59:45 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7f8dd2f4c880)
+[Wed Dec 19 17:59:45 2012] [debug] Routing to controller "JSGrid::Client" and action "get_client".
+[Wed Dec 19 17:59:45 2012] [error] Global symbol "$function_key" requires explicit package name at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Function.pm line 10.
+Global symbol "$fund_id" requires explicit package name at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Function.pm line 11.
+Compilation failed in require at (eval 364) line 1.
+
+[Wed Dec 19 17:59:45 2012] [debug] Template "exception.development.html.ep" not found.
+[Wed Dec 19 17:59:45 2012] [debug] Template "exception.html.ep" not found.
+[Wed Dec 19 17:59:45 2012] [debug] Rendering inline template.
+[Wed Dec 19 17:59:45 2012] [debug] Rendering inline template.
+[Wed Dec 19 17:59:45 2012] [debug] 500 Internal Server Error (0.344166s, 2.906/s).
+[Wed Dec 19 18:00:16 2012] [info] Listening at "http://*:3000".
+[Wed Dec 19 18:00:21 2012] [debug] Your secret passphrase needs to be changed!!!
+[Wed Dec 19 18:00:21 2012] [debug] PUT /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/function/alert3 (curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5).
+[Wed Dec 19 18:00:21 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Wed Dec 19 18:00:21 2012] [debug] on get_app()
+[Wed Dec 19 18:00:21 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7fe35174c880)
+[Wed Dec 19 18:00:21 2012] [debug] Routing to controller "JSGrid::Client" and action "get_client".
+[Wed Dec 19 18:00:21 2012] [error] Global symbol "$function_key" requires explicit package name at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Function.pm line 10.
+Compilation failed in require at (eval 364) line 1.
+
+[Wed Dec 19 18:00:21 2012] [debug] Template "exception.development.html.ep" not found.
+[Wed Dec 19 18:00:21 2012] [debug] Template "exception.html.ep" not found.
+[Wed Dec 19 18:00:21 2012] [debug] Rendering inline template.
+[Wed Dec 19 18:00:21 2012] [debug] Rendering inline template.
+[Wed Dec 19 18:00:21 2012] [debug] 500 Internal Server Error (0.110172s, 9.077/s).
+[Wed Dec 19 18:00:59 2012] [info] Listening at "http://*:3000".
+[Wed Dec 19 18:01:08 2012] [debug] Your secret passphrase needs to be changed!!!
+[Wed Dec 19 18:01:08 2012] [debug] PUT /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/function/alert3 (curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5).
+[Wed Dec 19 18:01:08 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Wed Dec 19 18:01:08 2012] [debug] on get_app()
+[Wed Dec 19 18:01:08 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7f80f1f4c880)
+[Wed Dec 19 18:01:08 2012] [debug] Routing to controller "JSGrid::Client" and action "get_client".
+[Wed Dec 19 18:01:08 2012] [debug] Routing to controller "JSGrid::Function" and action "create_function".
+[Wed Dec 19 18:01:08 2012] [debug] 200 OK (0.081461s, 12.276/s).
+[Wed Dec 19 18:01:30 2012] [debug] GET /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB/functions (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11).
+[Wed Dec 19 18:01:30 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Wed Dec 19 18:01:30 2012] [debug] on get_app()
+[Wed Dec 19 18:01:30 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7f80f3003300)
+[Wed Dec 19 18:01:30 2012] [debug] Routing to controller "JSGrid::Client" and action "get_client".
+[Wed Dec 19 18:01:30 2012] [debug] Routing to controller "JSGrid::Function" and action "list_functions".
+[Wed Dec 19 18:01:30 2012] [debug] 200 OK (0.055831s, 17.911/s).
+[Wed Dec 19 18:02:04 2012] [debug] Your secret passphrase needs to be changed!!!
+[Wed Dec 19 18:02:04 2012] [debug] GET /function/1 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11).
+[Wed Dec 19 18:02:04 2012] [debug] Routing to controller "JSGrid::Function" and action "get_function".
+[Wed Dec 19 18:02:04 2012] [error] Can't call method "name" without a package or object reference at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Function.pm line 11.
+
+[Wed Dec 19 18:02:04 2012] [debug] Template "exception.development.html.ep" not found.
+[Wed Dec 19 18:02:04 2012] [debug] Template "exception.html.ep" not found.
+[Wed Dec 19 18:02:04 2012] [debug] Rendering inline template.
+[Wed Dec 19 18:02:04 2012] [debug] Rendering inline template.
+[Wed Dec 19 18:02:04 2012] [debug] 500 Internal Server Error (0.193021s, 5.181/s).
+[Wed Dec 19 18:04:48 2012] [debug] Your secret passphrase needs to be changed!!!
+[Wed Dec 19 18:04:48 2012] [debug] GET /function/1 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11).
+[Wed Dec 19 18:04:48 2012] [debug] Routing to controller "JSGrid::Function" and action "get_function".
+[Wed Dec 19 18:04:48 2012] [debug] Routing to controller "JSGrid::Function" and action "return_function".
+[Wed Dec 19 18:04:48 2012] [error] Can't call method "name" without a package or object reference at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Function.pm line 16.
+
+[Wed Dec 19 18:04:48 2012] [debug] Template "exception.development.html.ep" not found.
+[Wed Dec 19 18:04:48 2012] [debug] Template "exception.html.ep" not found.
+[Wed Dec 19 18:04:48 2012] [debug] Rendering inline template.
+[Wed Dec 19 18:04:48 2012] [debug] Rendering inline template.
+[Wed Dec 19 18:04:48 2012] [debug] 500 Internal Server Error (0.140998s, 7.092/s).
+[Wed Dec 19 18:06:15 2012] [debug] Your secret passphrase needs to be changed!!!
+[Wed Dec 19 18:06:15 2012] [debug] GET /function/1 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11).
+[Wed Dec 19 18:06:15 2012] [debug] Routing to controller "JSGrid::Function" and action "get_function".
+[Wed Dec 19 18:06:15 2012] [debug] Routing to controller "JSGrid::Function" and action "return_function".
+[Wed Dec 19 18:06:15 2012] [debug] 200 OK (0.079717s, 12.544/s).
