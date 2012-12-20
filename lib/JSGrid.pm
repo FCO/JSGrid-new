@@ -18,6 +18,11 @@ sub startup {
 
 	$app->get('/app')->to(action => 'get_name');
 
+	my $app_func = $app->bridge('/function/:func_id', func_id => qr/\d+/)
+		->to(controller => 'function', action => 'get_function');
+
+	$app_func->put('/run')->to(action => 'run_function');
+
 	my $client = $app->bridge('/:client_key', client_key => qr/\w{40}/)
 		->to(controller => 'client', action => 'get_client');
 
@@ -31,6 +36,9 @@ sub startup {
 		->to(controller => 'function', action => 'get_function');
 
 	$func->get->to(action => 'return_function');
+
+	my $agent = $r->bridge->to(controller => "agent", action => "get_agent");
+	$agent->get('/execs')->to(action => "get_execs");
 }
 
 1;

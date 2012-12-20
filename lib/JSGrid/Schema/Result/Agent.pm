@@ -63,6 +63,12 @@ __PACKAGE__->table("agent");
   default_value: 1
   is_nullable: 0
 
+=head2 token
+
+  data_type: 'char'
+  is_nullable: 1
+  size: 50
+
 =cut
 
 __PACKAGE__->add_columns(
@@ -76,6 +82,8 @@ __PACKAGE__->add_columns(
   { data_type => "datetime", is_nullable => 1 },
   "distrust",
   { data_type => "real", default_value => 1, is_nullable => 0 },
+  "token",
+  { data_type => "char", is_nullable => 1, size => 50 },
 );
 
 =head1 PRIMARY KEY
@@ -90,10 +98,88 @@ __PACKAGE__->add_columns(
 
 __PACKAGE__->set_primary_key("id");
 
+=head1 UNIQUE CONSTRAINTS
 
-# Created by DBIx::Class::Schema::Loader v0.07033 @ 2012-12-19 10:40:28
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:iV1IHSdYsTCPVS+KI7yYaA
+=head2 C<token_unique>
 
+=over 4
+
+=item * L</token>
+
+=back
+
+=cut
+
+__PACKAGE__->add_unique_constraint("token_unique", ["token"]);
+
+=head1 RELATIONS
+
+=head2 queues
+
+Type: has_many
+
+Related object: L<JSGrid::Schema::Result::Queue>
+
+=cut
+
+__PACKAGE__->has_many(
+  "queues",
+  "JSGrid::Schema::Result::Queue",
+  { "foreign.agent_id" => "self.id" },
+  { cascade_copy => 0, cascade_delete => 0 },
+);
+
+
+# Created by DBIx::Class::Schema::Loader v0.07033 @ 2012-12-20 11:26:03
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:NZ+6x++ukHGs9/9ayqGM/A
+
+__PACKAGE__->resultset_class('JSGrid::Agent::ResultSet');
+
+use Digest::SHA1 qw/sha1_hex/;
+use Carp;
+
+sub should_believe {
+	my $self  = shift;
+	rand >= $self->distrust
+}
+
+sub get_test {
+	my $self   = shift;
+	my $schema = $self->result_source->schema;
+	my @agents = $schema->resultset("Agent")->search({distrust => {">=" =>  0.001}})->all;
+	my $agent  = $agents[rand @agents];
+	my @tests  = $schema->resultset("Queue")
+			->search({agent_id => $agent->id, done => ['false', 0, undef]})->all;
+	my $test   = $tests[rand @tests];
+	$test
+}
+
+sub get_execs {
+	my $self  = shift;
+	my @list;
+	my $schema = $self->result_source->schema;
+	$schema->txn_do(
+		sub{
+			my $list = $schema->resultset("Queue")->search({agent_id => undef, done => ['false', 0, undef]});
+			@list = $list->all;
+			$list->update({agent_id => $self->id});
+		}
+	);
+	my $test = $self->get_test if $self->should_believe;
+	push @list, $test ? $test : ();
+	@list
+}
+
+## uncomment these
+package JSGrid::Agent::ResultSet;
+use base 'DBIx::Class::ResultSet';
+
+sub get_agent {
+        my $self  = shift;
+        my $token = shift || sha1_hex(scalar(localtime time) . rand);
+
+        $self->find_or_create({token => $token})
+}
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration
 1;

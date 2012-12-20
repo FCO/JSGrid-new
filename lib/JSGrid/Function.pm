@@ -16,12 +16,24 @@ sub return_function {
 	$self->render_json({name => $func->name, code => $func->code})
 }
 
+sub run_function {
+	my $self = shift;
+	my $args = $self->param("args");
+	my $ret = $self->stash->{function}->create_related(queues => {
+		app  => $self->stash->{app},
+		args => $args,
+	});
+	return $self->render_json(Mojo::JSON::true) if $ret;
+	$self->render_json(Mojo::JSON::false)
+}
+
 sub create_function {
 	my $self      = shift;
 	my $func_name = $self->param("func_name");
 	my $code      = $self->param("code");
-	$self->stash->{app}->create_related(functions => {name => $func_name, code => $code});
-	$self->render_json(1);
+	my $ret = $self->stash->{app}->create_related(functions => {name => $func_name, code => $code});
+	return $self->render_json(Mojo::JSON::true) if $ret;
+	$self->render_json(Mojo::JSON::false)
 }
 
 sub list_functions {

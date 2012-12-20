@@ -59,6 +59,18 @@ __PACKAGE__->table("queue");
   default_value: '[]'
   is_nullable: 0
 
+=head2 agent_id
+
+  data_type: 'integer'
+  is_foreign_key: 1
+  is_nullable: 1
+
+=head2 done
+
+  data_type: 'bool'
+  default_value: false
+  is_nullable: 1
+
 =cut
 
 __PACKAGE__->add_columns(
@@ -70,6 +82,10 @@ __PACKAGE__->add_columns(
   { data_type => "integer", is_foreign_key => 1, is_nullable => 0 },
   "args",
   { data_type => "text", default_value => "[]", is_nullable => 0 },
+  "agent_id",
+  { data_type => "integer", is_foreign_key => 1, is_nullable => 1 },
+  "done",
+  { data_type => "bool", default_value => \"false", is_nullable => 1 },
 );
 
 =head1 PRIMARY KEY
@@ -85,6 +101,26 @@ __PACKAGE__->add_columns(
 __PACKAGE__->set_primary_key("id");
 
 =head1 RELATIONS
+
+=head2 agent
+
+Type: belongs_to
+
+Related object: L<JSGrid::Schema::Result::Agent>
+
+=cut
+
+__PACKAGE__->belongs_to(
+  "agent",
+  "JSGrid::Schema::Result::Agent",
+  { id => "agent_id" },
+  {
+    is_deferrable => 0,
+    join_type     => "LEFT",
+    on_delete     => "NO ACTION",
+    on_update     => "NO ACTION",
+  },
+);
 
 =head2 app
 
@@ -117,9 +153,14 @@ __PACKAGE__->belongs_to(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07033 @ 2012-12-19 10:40:28
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:n8Dbq898m0OuAO8KXHF6bA
+# Created by DBIx::Class::Schema::Loader v0.07033 @ 2012-12-20 13:01:58
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:c7tN1yFFjFoji03hNOmUaQ
 
+__PACKAGE__->load_components("InflateColumn::DateTime", "InflateColumn::Serializer");
+
+__PACKAGE__->add_column(
+	args => { data_type => "text", default_value => "[]", is_nullable => 0, 'serializer_class'   => 'JSON' }
+);
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration
 1;
