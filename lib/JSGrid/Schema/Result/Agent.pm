@@ -138,18 +138,46 @@ __PACKAGE__->resultset_class('JSGrid::Agent::ResultSet');
 use Digest::SHA1 qw/sha1_hex/;
 use Carp;
 
+sub test_pass {
+	my $self = shift;
+	$self->update($self->distrust * 0.95)
+}
+
+sub test_fail {
+	my $self = shift;
+	$self->update($self->distrust + 0.1)
+}
+
+sub test_response {
+	my $self		= shift;
+	my $execution_id	= shift;
+	my $answer		= shift;
+	my $execution = $self->search_related("Queue")->find($execution_id);
+
+	if($answer eq $execution->answer) {
+		$self->test_pass
+	} else {
+		$self->test_fail
+	}
+}
+
+sub get_app {
+	my $self = shift;
+	$self->search_related("Queues", {done => [0, 'false', undef]}, {order_by => "id"})->single->app;
+}
+
 sub should_believe {
 	my $self  = shift;
-	rand >= $self->distrust
+	rand() < $self->distrust
 }
 
 sub get_test {
 	my $self   = shift;
 	my $schema = $self->result_source->schema;
-	my @agents = $schema->resultset("Agent")->search({distrust => {">=" =>  0.001}})->all;
-	my $agent  = $agents[rand @agents];
+	my @agents = $schema->resultset("Agent")->search({}, {order_by => 'distrust'})->all;
+	my $agent  = $agents[rand (@agents / 6)];
 	my @tests  = $schema->resultset("Queue")
-			->search({agent_id => $agent->id, done => ['false', 0, undef]})->all;
+			->search({agent_id => $agent->id, done => ['true', 1, 't']})->all;
 	my $test   = $tests[rand @tests];
 	$test
 }
@@ -160,19 +188,20 @@ sub get_execs {
 	my $schema = $self->result_source->schema;
 	$schema->txn_do(
 		sub{
-			my $list = $schema->resultset("Queue")->search({agent_id => undef, done => ['false', 0, undef]});
+			my $list = $schema->resultset("Queue")->search({agent_id => undef, done => ['false', 0, undef]}, {order_by => "id"});
 			@list = $list->all;
 			$list->update({agent_id => $self->id});
 		}
 	);
 	my $test = $self->get_test if $self->should_believe;
-	push @list, $test ? $test : ();
+	unshift @list, $test ? $test : ();
 	@list
 }
 
 ## uncomment these
 package JSGrid::Agent::ResultSet;
 use base 'DBIx::Class::ResultSet';
+use Digest::SHA1 qw/sha1_hex/;
 
 sub get_agent {
         my $self  = shift;

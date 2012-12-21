@@ -71,6 +71,11 @@ __PACKAGE__->table("queue");
   default_value: false
   is_nullable: 1
 
+=head2 answer
+
+  data_type: 'text'
+  is_nullable: 1
+
 =cut
 
 __PACKAGE__->add_columns(
@@ -86,6 +91,8 @@ __PACKAGE__->add_columns(
   { data_type => "integer", is_foreign_key => 1, is_nullable => 1 },
   "done",
   { data_type => "bool", default_value => \"false", is_nullable => 1 },
+  "answer",
+  { data_type => "text", is_nullable => 1 },
 );
 
 =head1 PRIMARY KEY
@@ -153,8 +160,8 @@ __PACKAGE__->belongs_to(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07033 @ 2012-12-20 13:01:58
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:c7tN1yFFjFoji03hNOmUaQ
+# Created by DBIx::Class::Schema::Loader v0.07033 @ 2012-12-21 13:50:05
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:HuzZKHC9XfkU7rYXHqOPug
 
 __PACKAGE__->load_components("InflateColumn::DateTime", "InflateColumn::Serializer");
 
