@@ -174,10 +174,10 @@ sub should_believe {
 sub get_test {
 	my $self   = shift;
 	my $schema = $self->result_source->schema;
-	my @agents = $schema->resultset("Agent")->search({}, {order_by => 'distrust'})->all;
-	my $agent  = $agents[rand (@agents / 6)];
-	my @tests  = $schema->resultset("Queue")
-			->search({agent_id => $agent->id, done => ['true', 1, 't']})->all;
+	my $queue  = $schema->resultset("Queue")->search({done => ['true', 1, 't']});
+	my @agents = $queue->search_related("agent", {}, {order_by => 'distrust'})->all;
+	my $agent  = $agents[rand(@agents / 6)];
+	my @tests  = $queue->search({agent_id => $agent->id})->all;
 	my $test   = $tests[rand @tests];
 	$test
 }

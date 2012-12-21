@@ -2409,3 +2409,221 @@ Compilation failed in require at (eval 334) line 1.
 [Fri Dec 21 13:58:13 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_agent".
 [Fri Dec 21 13:58:13 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_execs".
 [Fri Dec 21 13:58:13 2012] [debug] 200 OK (0.120849s, 8.275/s).
+[Fri Dec 21 17:46:02 2012] [debug] GET /execs (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.101 Safari/537.11).
+[Fri Dec 21 17:46:02 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_agent".
+[Fri Dec 21 17:46:03 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_execs".
+[Fri Dec 21 17:46:03 2012] [debug] 200 OK (1.488598s, 0.672/s).
+[Fri Dec 21 17:46:04 2012] [debug] GET /execs (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.101 Safari/537.11).
+[Fri Dec 21 17:46:04 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_agent".
+[Fri Dec 21 17:46:04 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_execs".
+[Fri Dec 21 17:46:04 2012] [debug] 200 OK (0.057766s, 17.311/s).
+[Fri Dec 21 17:53:52 2012] [debug] Your secret passphrase needs to be changed!!!
+[Fri Dec 21 17:53:52 2012] [debug] GET /execs (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.101 Safari/537.11).
+[Fri Dec 21 17:53:52 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_agent".
+[Fri Dec 21 17:53:53 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_execs".
+[Fri Dec 21 17:53:53 2012] [error] search_related: result source 'Queue' has no such relationship Agents at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/DBIx/Class/Schema.pm line 1101.
+	DBIx::Class::Schema::throw_exception('JSGrid::Schema=HASH(0x7f90036ad400)', 'search_related: result source \'Queue\' has no such relations...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/DBIx/Class/ResultSource.pm line 2003
+	DBIx::Class::ResultSource::throw_exception('DBIx::Class::ResultSource::Table=HASH(0x7f90036af640)', 'search_related: result source \'Queue\' has no such relations...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/DBIx/Class/ResultSet.pm line 3748
+	DBIx::Class::ResultSet::throw_exception('DBIx::Class::ResultSet=HASH(0x7f90035d1948)', 'search_related: result source \'Queue\' has no such relations...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/DBIx/Class/ResultSet.pm line 3029
+	DBIx::Class::ResultSet::related_resultset('DBIx::Class::ResultSet=HASH(0x7f90035d1948)', 'Agents') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/DBIx/Class/ResultSet.pm line 963
+	DBIx::Class::ResultSet::search_related('DBIx::Class::ResultSet=HASH(0x7f90035d1948)', 'Agents', 'HASH(0x7f90037505a8)', 'HASH(0x7f9003750530)') called at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Schema/Result/Agent.pm line 178
+	JSGrid::Schema::Result::Agent::get_test('JSGrid::Schema::Result::Agent=HASH(0x7f90037759f0)') called at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Schema/Result/Agent.pm line 196
+	JSGrid::Schema::Result::Agent::get_execs('JSGrid::Schema::Result::Agent=HASH(0x7f90037759f0)') called at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Agent.pm line 15
+	JSGrid::Agent::get_execs('JSGrid::Agent=HASH(0x7f90036aa228)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Routes.pm line 142
+	Mojolicious::Routes::_controller('Mojolicious::Routes=HASH(0x7f900332bd70)', 'Mojolicious::Controller=HASH(0x7f90036a02e8)', 'HASH(0x7f90036a9270)', 0) called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Routes.pm line 206
+	Mojolicious::Routes::_walk('Mojolicious::Routes=HASH(0x7f900332bd70)', 'Mojolicious::Controller=HASH(0x7f90036a02e8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Routes.pm line 78
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x7f900332bd70)', 'Mojolicious::Controller=HASH(0x7f90036a02e8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 130
+	Mojolicious::dispatch('JSGrid=HASH(0x7f90033322a0)', 'Mojolicious::Controller=HASH(0x7f90036a02e8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 185
+	Mojolicious::_dispatch(undef, 'Mojolicious::Controller=HASH(0x7f90036a02e8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Plugins.pm line 20
+	Mojolicious::Plugins::__ANON__() called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 192
+	eval {...} called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 192
+	Mojolicious::_exception('CODE(0x7f90036a3738)', 'Mojolicious::Controller=HASH(0x7f90036a02e8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Plugins.pm line 20
+	Mojolicious::Plugins::__ANON__() called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Plugins.pm line 22
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x7f900332c3e8)', 'around_dispatch', 'Mojolicious::Controller=HASH(0x7f90036a02e8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 153
+	eval {...} called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 153
+	Mojolicious::handler('JSGrid=HASH(0x7f90033322a0)', 'Mojo::Transaction::HTTP=HASH(0x7f90036997c8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server.pm line 14
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x7f900312c030)', 'Mojo::Transaction::HTTP=HASH(0x7f90036997c8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/EventEmitter.pm line 13
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x7f900312c030)', 'request', 'Mojo::Transaction::HTTP=HASH(0x7f90036997c8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Daemon.pm line 92
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x7f90036997c8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/EventEmitter.pm line 13
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x7f90036997c8)', 'request') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Transaction/HTTP.pm line 88
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x7f90036997c8)', 'GET /execs HTTP/1.1\x{d}\x{a}Host: 127.0.0.1:3000\x{d}\x{a}Connection: keep-a...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Daemon.pm line 212
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x7f900312c030)', 'ee2e2f39c85a4d31e2c22c3837a534e5', 'GET /execs HTTP/1.1\x{d}\x{a}Host: 127.0.0.1:3000\x{d}\x{a}Connection: keep-a...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Daemon.pm line 189
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x7f900332bc20)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/EventEmitter.pm line 27
+	eval {...} called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/EventEmitter.pm line 27
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x7f900332bc20)', 'read', 'GET /execs HTTP/1.1\x{d}\x{a}Host: 127.0.0.1:3000\x{d}\x{a}Connection: keep-a...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/IOLoop/Stream.pm line 105
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x7f900332bc20)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/IOLoop/Stream.pm line 122
+	Mojo::IOLoop::Stream::__ANON__('Mojo::Reactor::Poll=HASH(0x7f9003122180)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Reactor/Poll.pm line 103
+	eval {...} called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Reactor/Poll.pm line 103
+	Mojo::Reactor::Poll::_sandbox('Mojo::Reactor::Poll=HASH(0x7f9003122180)', 'Read', 'CODE(0x7f90036a01b0)', 0) called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Reactor/Poll.pm line 41
+	Mojo::Reactor::Poll::one_tick('Mojo::Reactor::Poll=HASH(0x7f9003122180)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Reactor/Poll.pm line 80
+	Mojo::Reactor::Poll::start('Mojo::Reactor::Poll=HASH(0x7f9003122180)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/IOLoop.pm line 157
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x7f90031220d8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Morbo.pm line 94
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x7f9003014298)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Morbo.pm line 64
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x7f9003014298)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Morbo.pm line 36
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x7f9003014298)', 'script/jsgrid') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/bin/morbo line 44
+
+[Fri Dec 21 17:53:53 2012] [debug] Template "exception.development.html.ep" not found.
+[Fri Dec 21 17:53:53 2012] [debug] Template "exception.html.ep" not found.
+[Fri Dec 21 17:53:53 2012] [debug] Rendering inline template.
+[Fri Dec 21 17:53:53 2012] [debug] Rendering inline template.
+[Fri Dec 21 17:53:53 2012] [debug] 500 Internal Server Error (0.799476s, 1.251/s).
+[Fri Dec 21 17:54:59 2012] [debug] PUT /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/function/2/run (curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5).
+[Fri Dec 21 17:54:59 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Fri Dec 21 17:54:59 2012] [debug] on get_app()
+[Fri Dec 21 17:54:59 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7f90048e8148)
+[Fri Dec 21 17:54:59 2012] [debug] Routing to controller "JSGrid::Function" and action "get_function".
+[Fri Dec 21 17:54:59 2012] [debug] Routing to controller "JSGrid::Function" and action "run_function".
+[Fri Dec 21 17:54:59 2012] [debug] 200 OK (0.120570s, 8.294/s).
+[Fri Dec 21 17:54:59 2012] [debug] PUT /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/function/2/run (curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5).
+[Fri Dec 21 17:54:59 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Fri Dec 21 17:54:59 2012] [debug] on get_app()
+[Fri Dec 21 17:54:59 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7f90048d7640)
+[Fri Dec 21 17:54:59 2012] [debug] Routing to controller "JSGrid::Function" and action "get_function".
+[Fri Dec 21 17:54:59 2012] [debug] Routing to controller "JSGrid::Function" and action "run_function".
+[Fri Dec 21 17:54:59 2012] [debug] 200 OK (0.009680s, 103.306/s).
+[Fri Dec 21 17:55:00 2012] [debug] PUT /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/function/2/run (curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5).
+[Fri Dec 21 17:55:00 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Fri Dec 21 17:55:00 2012] [debug] on get_app()
+[Fri Dec 21 17:55:00 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7f90048e2038)
+[Fri Dec 21 17:55:00 2012] [debug] Routing to controller "JSGrid::Function" and action "get_function".
+[Fri Dec 21 17:55:00 2012] [debug] Routing to controller "JSGrid::Function" and action "run_function".
+[Fri Dec 21 17:55:00 2012] [debug] 200 OK (0.009784s, 102.208/s).
+[Fri Dec 21 17:55:00 2012] [debug] PUT /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/function/2/run (curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5).
+[Fri Dec 21 17:55:00 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Fri Dec 21 17:55:00 2012] [debug] on get_app()
+[Fri Dec 21 17:55:00 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7f90048b9f70)
+[Fri Dec 21 17:55:00 2012] [debug] Routing to controller "JSGrid::Function" and action "get_function".
+[Fri Dec 21 17:55:00 2012] [debug] Routing to controller "JSGrid::Function" and action "run_function".
+[Fri Dec 21 17:55:00 2012] [debug] 200 OK (0.265361s, 3.768/s).
+[Fri Dec 21 17:55:00 2012] [debug] PUT /AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/function/2/run (curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5).
+[Fri Dec 21 17:55:00 2012] [debug] Routing to controller "JSGrid::Application" and action "get_app".
+[Fri Dec 21 17:55:00 2012] [debug] on get_app()
+[Fri Dec 21 17:55:00 2012] [debug] JSGrid::Schema::Result::Application=HASH(0x7f90048df498)
+[Fri Dec 21 17:55:00 2012] [debug] Routing to controller "JSGrid::Function" and action "get_function".
+[Fri Dec 21 17:55:00 2012] [debug] Routing to controller "JSGrid::Function" and action "run_function".
+[Fri Dec 21 17:55:01 2012] [debug] 200 OK (0.525297s, 1.904/s).
+[Fri Dec 21 17:55:06 2012] [debug] GET /execs (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.101 Safari/537.11).
+[Fri Dec 21 17:55:06 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_agent".
+[Fri Dec 21 17:55:06 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_execs".
+[Fri Dec 21 17:55:06 2012] [error] search_related: result source 'Queue' has no such relationship Agents at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/DBIx/Class/Schema.pm line 1101.
+	DBIx::Class::Schema::throw_exception('JSGrid::Schema=HASH(0x7f90036ad400)', 'search_related: result source \'Queue\' has no such relations...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/DBIx/Class/ResultSource.pm line 2003
+	DBIx::Class::ResultSource::throw_exception('DBIx::Class::ResultSource::Table=HASH(0x7f90036af640)', 'search_related: result source \'Queue\' has no such relations...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/DBIx/Class/ResultSet.pm line 3748
+	DBIx::Class::ResultSet::throw_exception('DBIx::Class::ResultSet=HASH(0x7f90048d5118)', 'search_related: result source \'Queue\' has no such relations...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/DBIx/Class/ResultSet.pm line 3029
+	DBIx::Class::ResultSet::related_resultset('DBIx::Class::ResultSet=HASH(0x7f90048d5118)', 'Agents') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/DBIx/Class/ResultSet.pm line 963
+	DBIx::Class::ResultSet::search_related('DBIx::Class::ResultSet=HASH(0x7f90048d5118)', 'Agents', 'HASH(0x7f90048de798)', 'HASH(0x7f90048d67a8)') called at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Schema/Result/Agent.pm line 178
+	JSGrid::Schema::Result::Agent::get_test('JSGrid::Schema::Result::Agent=HASH(0x7f90048daf78)') called at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Schema/Result/Agent.pm line 196
+	JSGrid::Schema::Result::Agent::get_execs('JSGrid::Schema::Result::Agent=HASH(0x7f90048daf78)') called at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Agent.pm line 15
+	JSGrid::Agent::get_execs('JSGrid::Agent=HASH(0x7f90048d61a8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Routes.pm line 142
+	Mojolicious::Routes::_controller('Mojolicious::Routes=HASH(0x7f900332bd70)', 'Mojolicious::Controller=HASH(0x7f90048b9928)', 'HASH(0x7f90036a9270)', 0) called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Routes.pm line 206
+	Mojolicious::Routes::_walk('Mojolicious::Routes=HASH(0x7f900332bd70)', 'Mojolicious::Controller=HASH(0x7f90048b9928)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Routes.pm line 78
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x7f900332bd70)', 'Mojolicious::Controller=HASH(0x7f90048b9928)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 130
+	Mojolicious::dispatch('JSGrid=HASH(0x7f90033322a0)', 'Mojolicious::Controller=HASH(0x7f90048b9928)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 185
+	Mojolicious::_dispatch(undef, 'Mojolicious::Controller=HASH(0x7f90048b9928)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Plugins.pm line 20
+	Mojolicious::Plugins::__ANON__() called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 192
+	eval {...} called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 192
+	Mojolicious::_exception('CODE(0x7f90048df408)', 'Mojolicious::Controller=HASH(0x7f90048b9928)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Plugins.pm line 20
+	Mojolicious::Plugins::__ANON__() called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Plugins.pm line 22
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x7f900332c3e8)', 'around_dispatch', 'Mojolicious::Controller=HASH(0x7f90048b9928)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 153
+	eval {...} called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 153
+	Mojolicious::handler('JSGrid=HASH(0x7f90033322a0)', 'Mojo::Transaction::HTTP=HASH(0x7f90048e22a8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server.pm line 14
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x7f900312c030)', 'Mojo::Transaction::HTTP=HASH(0x7f90048e22a8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/EventEmitter.pm line 13
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x7f900312c030)', 'request', 'Mojo::Transaction::HTTP=HASH(0x7f90048e22a8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Daemon.pm line 92
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x7f90048e22a8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/EventEmitter.pm line 13
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x7f90048e22a8)', 'request') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Transaction/HTTP.pm line 88
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x7f90048e22a8)', 'GET /execs HTTP/1.1\x{d}\x{a}Host: 127.0.0.1:3000\x{d}\x{a}Connection: keep-a...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Daemon.pm line 212
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x7f900312c030)', '2357206cfd51171e68dbb1cbf45734ec', 'GET /execs HTTP/1.1\x{d}\x{a}Host: 127.0.0.1:3000\x{d}\x{a}Connection: keep-a...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Daemon.pm line 189
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x7f90048d9228)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/EventEmitter.pm line 27
+	eval {...} called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/EventEmitter.pm line 27
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x7f90048d9228)', 'read', 'GET /execs HTTP/1.1\x{d}\x{a}Host: 127.0.0.1:3000\x{d}\x{a}Connection: keep-a...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/IOLoop/Stream.pm line 105
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x7f90048d9228)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/IOLoop/Stream.pm line 122
+	Mojo::IOLoop::Stream::__ANON__('Mojo::Reactor::Poll=HASH(0x7f9003122180)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Reactor/Poll.pm line 103
+	eval {...} called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Reactor/Poll.pm line 103
+	Mojo::Reactor::Poll::_sandbox('Mojo::Reactor::Poll=HASH(0x7f9003122180)', 'Read', 'CODE(0x7f90036a21b0)', 0) called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Reactor/Poll.pm line 41
+	Mojo::Reactor::Poll::one_tick('Mojo::Reactor::Poll=HASH(0x7f9003122180)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Reactor/Poll.pm line 80
+	Mojo::Reactor::Poll::start('Mojo::Reactor::Poll=HASH(0x7f9003122180)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/IOLoop.pm line 157
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x7f90031220d8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Morbo.pm line 94
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x7f9003014298)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Morbo.pm line 64
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x7f9003014298)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Morbo.pm line 36
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x7f9003014298)', 'script/jsgrid') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/bin/morbo line 44
+
+[Fri Dec 21 17:55:06 2012] [debug] Template "exception.development.html.ep" not found.
+[Fri Dec 21 17:55:06 2012] [debug] Template "exception.html.ep" not found.
+[Fri Dec 21 17:55:06 2012] [debug] Rendering cached inline template.
+[Fri Dec 21 17:55:06 2012] [debug] Rendering cached inline template.
+[Fri Dec 21 17:55:06 2012] [debug] 500 Internal Server Error (0.027294s, 36.638/s).
+[Fri Dec 21 17:55:21 2012] [debug] Your secret passphrase needs to be changed!!!
+[Fri Dec 21 17:55:21 2012] [debug] GET /execs (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.101 Safari/537.11).
+[Fri Dec 21 17:55:21 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_agent".
+[Fri Dec 21 17:55:21 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_execs".
+[Fri Dec 21 17:55:21 2012] [error] search_related: result source 'Queue' has no such relationship Agent at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/DBIx/Class/Schema.pm line 1101.
+	DBIx::Class::Schema::throw_exception('JSGrid::Schema=HASH(0x7f90036ad430)', 'search_related: result source \'Queue\' has no such relations...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/DBIx/Class/ResultSource.pm line 2003
+	DBIx::Class::ResultSource::throw_exception('DBIx::Class::ResultSource::Table=HASH(0x7f90036af670)', 'search_related: result source \'Queue\' has no such relations...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/DBIx/Class/ResultSet.pm line 3748
+	DBIx::Class::ResultSet::throw_exception('DBIx::Class::ResultSet=HASH(0x7f90035d1948)', 'search_related: result source \'Queue\' has no such relations...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/DBIx/Class/ResultSet.pm line 3029
+	DBIx::Class::ResultSet::related_resultset('DBIx::Class::ResultSet=HASH(0x7f90035d1948)', 'Agent') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/DBIx/Class/ResultSet.pm line 963
+	DBIx::Class::ResultSet::search_related('DBIx::Class::ResultSet=HASH(0x7f90035d1948)', 'Agent', 'HASH(0x7f90037505d8)', 'HASH(0x7f9003750560)') called at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Schema/Result/Agent.pm line 178
+	JSGrid::Schema::Result::Agent::get_test('JSGrid::Schema::Result::Agent=HASH(0x7f9003775a20)') called at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Schema/Result/Agent.pm line 196
+	JSGrid::Schema::Result::Agent::get_execs('JSGrid::Schema::Result::Agent=HASH(0x7f9003775a20)') called at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Agent.pm line 15
+	JSGrid::Agent::get_execs('JSGrid::Agent=HASH(0x7f90036aa258)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Routes.pm line 142
+	Mojolicious::Routes::_controller('Mojolicious::Routes=HASH(0x7f900332bd70)', 'Mojolicious::Controller=HASH(0x7f900362e368)', 'HASH(0x7f90036a92a0)', 0) called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Routes.pm line 206
+	Mojolicious::Routes::_walk('Mojolicious::Routes=HASH(0x7f900332bd70)', 'Mojolicious::Controller=HASH(0x7f900362e368)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Routes.pm line 78
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x7f900332bd70)', 'Mojolicious::Controller=HASH(0x7f900362e368)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 130
+	Mojolicious::dispatch('JSGrid=HASH(0x7f90033322a0)', 'Mojolicious::Controller=HASH(0x7f900362e368)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 185
+	Mojolicious::_dispatch(undef, 'Mojolicious::Controller=HASH(0x7f900362e368)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Plugins.pm line 20
+	Mojolicious::Plugins::__ANON__() called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 192
+	eval {...} called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 192
+	Mojolicious::_exception('CODE(0x7f90036a3768)', 'Mojolicious::Controller=HASH(0x7f900362e368)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Plugins.pm line 20
+	Mojolicious::Plugins::__ANON__() called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious/Plugins.pm line 22
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x7f900332c3e8)', 'around_dispatch', 'Mojolicious::Controller=HASH(0x7f900362e368)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 153
+	eval {...} called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojolicious.pm line 153
+	Mojolicious::handler('JSGrid=HASH(0x7f90033322a0)', 'Mojo::Transaction::HTTP=HASH(0x7f900366fca0)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server.pm line 14
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x7f900312c3a8)', 'Mojo::Transaction::HTTP=HASH(0x7f900366fca0)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/EventEmitter.pm line 13
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x7f900312c3a8)', 'request', 'Mojo::Transaction::HTTP=HASH(0x7f900366fca0)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Daemon.pm line 92
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x7f900366fca0)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/EventEmitter.pm line 13
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x7f900366fca0)', 'request') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Transaction/HTTP.pm line 88
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x7f900366fca0)', 'GET /execs HTTP/1.1\x{d}\x{a}Host: 127.0.0.1:3000\x{d}\x{a}Connection: keep-a...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Daemon.pm line 212
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x7f900312c3a8)', '65afca51a79056c2f69a4498cbd0763a', 'GET /execs HTTP/1.1\x{d}\x{a}Host: 127.0.0.1:3000\x{d}\x{a}Connection: keep-a...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Daemon.pm line 189
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x7f900332bc20)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/EventEmitter.pm line 27
+	eval {...} called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/EventEmitter.pm line 27
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x7f900332bc20)', 'read', 'GET /execs HTTP/1.1\x{d}\x{a}Host: 127.0.0.1:3000\x{d}\x{a}Connection: keep-a...') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/IOLoop/Stream.pm line 105
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x7f900332bc20)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/IOLoop/Stream.pm line 122
+	Mojo::IOLoop::Stream::__ANON__('Mojo::Reactor::Poll=HASH(0x7f9003122180)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Reactor/Poll.pm line 103
+	eval {...} called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Reactor/Poll.pm line 103
+	Mojo::Reactor::Poll::_sandbox('Mojo::Reactor::Poll=HASH(0x7f9003122180)', 'Read', 'CODE(0x7f90036a01b0)', 0) called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Reactor/Poll.pm line 41
+	Mojo::Reactor::Poll::one_tick('Mojo::Reactor::Poll=HASH(0x7f9003122180)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Reactor/Poll.pm line 80
+	Mojo::Reactor::Poll::start('Mojo::Reactor::Poll=HASH(0x7f9003122180)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/IOLoop.pm line 157
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x7f90031220d8)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Morbo.pm line 94
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x7f9003014298)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Morbo.pm line 64
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x7f9003014298)') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/lib/site_perl/5.16.1/Mojo/Server/Morbo.pm line 36
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x7f9003014298)', 'script/jsgrid') called at /Users/fernandocorrea/perl5/perlbrew/perls/perl-5.16.1/bin/morbo line 44
+
+[Fri Dec 21 17:55:21 2012] [debug] Template "exception.development.html.ep" not found.
+[Fri Dec 21 17:55:21 2012] [debug] Template "exception.html.ep" not found.
+[Fri Dec 21 17:55:21 2012] [debug] Rendering inline template.
+[Fri Dec 21 17:55:21 2012] [debug] Rendering inline template.
+[Fri Dec 21 17:55:21 2012] [debug] 500 Internal Server Error (0.168836s, 5.923/s).
+[Fri Dec 21 17:57:05 2012] [debug] Your secret passphrase needs to be changed!!!
+[Fri Dec 21 17:57:05 2012] [debug] GET /execs (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.101 Safari/537.11).
+[Fri Dec 21 17:57:05 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_agent".
+[Fri Dec 21 17:57:06 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_execs".
+[Fri Dec 21 17:57:06 2012] [error] Can't call method "id" on an undefined value at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Schema/Result/Agent.pm line 180.
+
+[Fri Dec 21 17:57:06 2012] [debug] Template "exception.development.html.ep" not found.
+[Fri Dec 21 17:57:06 2012] [debug] Template "exception.html.ep" not found.
+[Fri Dec 21 17:57:06 2012] [debug] Rendering inline template.
+[Fri Dec 21 17:57:06 2012] [debug] Rendering inline template.
+[Fri Dec 21 17:57:06 2012] [debug] 500 Internal Server Error (0.122198s, 8.183/s).
+[Fri Dec 21 17:59:12 2012] [debug] Your secret passphrase needs to be changed!!!
+[Fri Dec 21 17:59:12 2012] [debug] GET /execs (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.101 Safari/537.11).
+[Fri Dec 21 17:59:12 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_agent".
+[Fri Dec 21 17:59:12 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_execs".
+[Fri Dec 21 17:59:12 2012] [error] Can't call method "id" on an undefined value at /Users/fernandocorrea/jsgrid/script/../lib/JSGrid/Schema/Result/Agent.pm line 180.
+
+[Fri Dec 21 17:59:12 2012] [debug] Template "exception.development.html.ep" not found.
+[Fri Dec 21 17:59:12 2012] [debug] Template "exception.html.ep" not found.
+[Fri Dec 21 17:59:12 2012] [debug] Rendering inline template.
+[Fri Dec 21 17:59:12 2012] [debug] Rendering inline template.
+[Fri Dec 21 17:59:12 2012] [debug] 500 Internal Server Error (0.127470s, 7.845/s).
+[Fri Dec 21 18:02:05 2012] [debug] GET /execs (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.101 Safari/537.11).
+[Fri Dec 21 18:02:05 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_agent".
+[Fri Dec 21 18:02:05 2012] [debug] Routing to controller "JSGrid::Agent" and action "get_execs".
+[Fri Dec 21 18:02:05 2012] [debug] 200 OK (0.012495s, 80.032/s).
